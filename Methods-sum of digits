@@ -1,0 +1,26 @@
+import java.util.Scanner;//scanner class
+public class Sum//main class
+{
+    public static void main(String[] args)//function class
+    {
+      Scanner sc=new Scanner(System.in);//object class the code starts from here
+      int a=sc.nextInt();//value1
+      int b=0,t;
+      while(a>0)
+      {
+          t=a%10;
+          b+=t;
+          a=a/10;
+      }
+      System.out.println(b);
+    }
+}
+//class sum
+class Sum1
+{
+    public static int sum(int a)//definition
+    {
+        int sum=a;
+        return sum;
+    }
+}
