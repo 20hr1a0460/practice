@@ -1,0 +1,27 @@
+import java.util.*;//scanner class
+public class Amoeba//main class
+{
+    public static void main(String[] args)//function class
+    {
+     Scanner sc=new Scanner(System.in);//object class here the program starts
+     System.out.println("Enter the number of Months:");//definition
+     int n=sc.nextInt();
+     int a=0,b=1,sum=0,i=2;
+     while(i<n){
+         sum=a+b;
+         a=b;
+          b=sum;
+         i++;
+     }
+         System.out.printf("The amoeba size is %d",sum);
+    }
+}
+//class amoeba1
+class Amoeba1
+{
+    public static int sum(int n)//definition
+    {
+        int sum=n;
+        return sum;
+    }
+}
