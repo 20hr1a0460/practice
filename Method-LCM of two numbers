@@ -1,0 +1,38 @@
+import java.util.*;
+public class Lcm
+{
+    public static void main(String[] args)
+    {
+     Scanner sc=new Scanner(System.in);
+     System.out.println("Enter the first number");
+     int a=sc.nextInt();
+     System.out.println("Enter the second number");
+     int b=sc.nextInt();
+     Lcm1 k=new Lcm1();
+     int h=k.kkk(a,b);
+             System.out.printf("LCM of " + a +" and " + b + " is " +h);
+    }
+}
+class Lcm1
+{
+    public static int kkk(int a,int b)
+    {
+    
+    int max,x,lcm=0;
+     if(a>b)
+     {
+         max=x=a;
+     }
+     else{
+         max=x=b;
+     }
+     while(a!=0){
+         if( max % a==0 && max % b==0 ){
+             lcm=max;
+             break;
+         }
+         max +=x;
+     }
+     return max;
+    }
+}
